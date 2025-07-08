@@ -41,7 +41,7 @@ print(str[::2])'''
 
 
 #lower()
-str = "python "
+#str = "python "
 '''print(str.lower())
 print(str.upper())
 print(str.replace("PYTHON", "coding"))
@@ -51,7 +51,7 @@ str_2 = "Hello World"
 print(str_2.replace('o', 'a'))'''
 
 #split()
-str2 = "Hello World"
+#str2 = "Hello World"
 '''print(str.split())
 
 print(str.split('o'))'''
@@ -123,7 +123,7 @@ print("Consonants in the string:", result)'''
 
 #digit extraction
 
-str2 = input("Enter a string with digits: ")
+'''str2 = input("Enter a string with digits: ")
 digits = ""
 for char in str2:
     if char.isdigit():
@@ -142,16 +142,46 @@ for i  in str:
 
 print(digiCount)
 print(digit)
-#print(result)
+#print(result)'''
 
 #task 1: palindrome check
 #racecar
 #racecar
+
+'''text = input("Enter a String: ")
+if text == text[::-1]:
+    print("The string is a palindrome")
+else:
+    print("The string is not a palindrome")'''
 
 
 #task 2: anagram check
 #listen
 #silent
 
+#task 2: anagram check
+#listen
+#silent
+
+'''str1 = input("Enter first string: ")
+str2 = input("Enter second string: ")
+
+if sorted(str1) == sorted(str2):
+    print("The strings are anagrams")
+else:
+    print("The strings are not anagrams")'''
+
 #task 3: python is on trend
 #remove duplicates characters
+
+#task 3: python is on trend
+#remove duplicate characters
+
+text = input("Enter a string: ")
+result = ""
+for char in text:
+    if char not in result:
+        result += char
+print("String after removing duplicates:", result)
+
+
