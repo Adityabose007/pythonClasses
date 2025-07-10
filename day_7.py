@@ -132,10 +132,60 @@ countDown(5)  # Start the countdown from 5'''
 
 
 #task 1 - leap year
+
+# Check if a year is a leap year
+
+def is_leap_year(year):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        return True
+    else:
+        return False
+
+year = int(input("Enter a year: "))
+if is_leap_year(year):
+    print(year, "is a leap year.")
+else:
+    print(year, "is not a leap year.")
+
 #task 2 - simple interest caluclator
+
+#task 2 - simple interest calculator
+# Simple Interest Calculator
+
+p = float(input("Enter principal amount: "))
+r = float(input("Enter rate of interest: "))
+t = float(input("Enter time (in years): "))
+
+si = (p * r * t) / 100
+print("Simple Interest is:", si)
+
 #task 3 - number guessing game
+
+# Number Guessing Game
+
+import random
+
+number = random.randint(1, 10)
+guess = int(input("Guess a number between 1 and 10: "))
+
+if guess == number:
+    print("Congratulations! You guessed it right.")
+else:
+    print(f"Sorry, the correct number was {number}. Better luck next time!")
+
 #task 4 - sum of digits
 
+# Sum of digits
+
+n = int(input("Enter a number: "))
+total = 0
+
+while n > 0:
+    digit = n % 10
+    total += digit
+    n = n // 10
+
+print("Sum of digits is:", total)
 
 '''n = 1 2 5 6
 n % 10 = 6
