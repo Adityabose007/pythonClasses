@@ -1,0 +1,8 @@
+Hello python 
+hello world
+hello class
+this is a line 
+this is another line 
+this is the line3 
+Adding a line in append mode
+Add another line in append mode

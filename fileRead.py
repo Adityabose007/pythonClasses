@@ -1,0 +1,8 @@
+file = open("sample.txt", "r")
+#oneline = file.readline()
+#print(oneline)
+#content = file.read()
+#print(content)
+#listline = file.readlines()
+#print(listline)
+#print(listline[2])
