@@ -17,12 +17,14 @@ with open("names.txt", "r") as f:
 num = int(input("Enter a number for multiplication table: "))
 
 # Write multiplication table to file
+
 with open("table.txt", "w") as f:
     for i in range(1, 11):
         line = f"{num} x {i} = {num * i}\n"
         f.write(line)
 
 # Read and print multiplication table from file
+
 with open("table.txt", "r") as f:
     print(f"Multiplication table of {num}:")
     for line in f:
