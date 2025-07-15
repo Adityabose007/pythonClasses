@@ -3,11 +3,8 @@
 
 # inputentry
 
-
-
-
 def write_entry():
-    date = input("Enter the date (YYYY-MM-DD): ")
+    date = input("Enter the date (DD-MM-YYYY): ")
     line = input("Write your diary entry: ")
 
     entry = f"{date} --> {line}\n"
@@ -26,3 +23,4 @@ while True:
     if choice != "y":
         print("👋 Exiting Diary. Goodbye!")
         break
+
