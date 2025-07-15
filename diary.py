@@ -15,7 +15,7 @@ def write_entry():
     try:
         with open("diary.txt", "a") as file:
             file.write(entry)
-        print("✅ Entry saved successfully!")
+        print("✅ Entry saved successfully!😊")
     except Exception as e:
         print("❌ Failed to write entry:", e)
 
