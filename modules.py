@@ -14,4 +14,8 @@ li - [1,2,3,4,5,6,7]
 r.shuffle(li)
 print(li)'''
 
-
+now = dt.datetime.now()
+print(now)
+print(now.strftime("%Y-%m-%d"))
+print(now.strftime("%H -%M - %S"))
+print(now.strftime("%Y"))

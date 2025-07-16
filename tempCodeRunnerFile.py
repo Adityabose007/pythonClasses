@@ -1,0 +1,1 @@
+from deci_to_binary import decimal_to_binary

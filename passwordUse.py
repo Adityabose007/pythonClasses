@@ -1,3 +1,3 @@
 import passwordGenerator as p
 
-print(p.generatePassword(20))
+print(p.generate_pass(20))

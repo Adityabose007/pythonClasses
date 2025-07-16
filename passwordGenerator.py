@@ -1,8 +1,6 @@
 import random
 
-
-
-def generate_pass(len):
+def generate_pass(length):
     LETTERS = "ADCDEFJHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
     digits = "0123456789"
     special = "!@#$%^&*()_="
@@ -11,10 +9,7 @@ def generate_pass(len):
 
     password = ""
 
-    for _ in range(len):
-        pasword += random.choice(characters)
+    for _ in range(length):
+        password += random.choice(characters)
 
     return password
-
-
-# task1 : - 
