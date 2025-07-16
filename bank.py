@@ -102,10 +102,3 @@ def main():
             print("Invalid choice. Try again.")
 
 main()
-
-
-
-# diary.txt
-# date, line
-
-# inputentry
