@@ -15,4 +15,3 @@ r.shuffle(li)
 print(li)'''
 
 
-now 
