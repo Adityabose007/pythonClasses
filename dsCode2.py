@@ -12,14 +12,14 @@ import numpy as np
 #arr2 = np.stack((arr1, arr2))
 #print(arr2)
 
-'''varr = np.stack((arr1, arr2))
-print(varr)
+#varr = np.stack((arr1, arr2))
+#print(varr)
 
-a  =np.array([1,4,6,8,9,12,15])
-newArr = np.array_split(arr , 3)
-print(newArr)
+#a  =np.array([1,4,6,8,9,12,15])
+#newArr = np.array_split(arr , 3)
+#print(newArr)
 
-print(newArr[1])'''
+#print(newArr[1])
 
 #a  =np.array([1,4,6,8,9,12,1 , 115])
 
@@ -79,4 +79,13 @@ print(newArr[1])'''
 #abs = np.array([2,-4,6,0,22])
 #print(np.absolute(abs))
 
+
+#ar  = np.array([-4.55, -3.23, 2.44, 5.80])
+#print(np.trunc(ar))
+#print(np.around(ar))
+#print(np.floor(ar))
+#print(np.ceil(ar))
+
+#print(np.min(ar))
+#print(np.max(ar))
 
