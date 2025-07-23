@@ -19,3 +19,4 @@ import numpy as np
 #print(np.min(temp_data, axis=1))
 
 #print(np.std(temp_data))
+
