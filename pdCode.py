@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler, MinMaxScaler , LabelEncoder
 
 data = {
     'Name': ['Alice', 'Bob', 'Charlie', 'Dave', 'Emily', 'Bob', 'arkit'],
@@ -9,15 +10,48 @@ data = {
     
 }
 
+#df = pd.DataFrame(data)
+#print(df)
+
+#scaler = StandardScaler()#
+#df_scaled = pd.DataFrame(scaler.fit_transform(df[['Age', 'salary']]))
+#print("standarddized data") 
+#print(df_scaled)
+#scaler2 = MinMaxScaler()
+#print("normalized data")
+#df_normal = pd.DataFrame(scaler2.fit_transform(df[['Age', 'salary']]))
+#print(df_normal)             
+
+df = pd.DataFrame({'city': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix'],})
+encoder = LabelEncoder()
+df['city Label'] = encoder.fit_transform(df['city'])
+print(df)
+
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'Dave', 'Emily', 'Bob', 'arkit'],
+    'Age': [25, np.nan, 40, np.nan, 25, 35, 45],
+    'salary': [3000, 6000, np.nan, 80000, 40000, 50000, 10000]
+}
 
 df = pd.DataFrame(data)
 
-salary = df["salary"].dropna()
-plt.boxplot(salary)
+#df_grp = df.groupby('Name').mean()
+#print(df_grp)
 
-plt.title("Outlier detection")
-plt.ylabel("salary")
-plt.show()
+
+df_filter = df[df['salary'] > 30000]
+print(df_filter)
+
+
+
+#df = pd.DataFrame(data)
+
+#salary = df["salary"].dropna()
+#plt.boxplot(salary)
+
+#plt.title("Outlier detection")
+#plt.ylabel("salary")
+#plt.show()
 
 
 #df = pd.DataFrame(data)
@@ -90,3 +124,6 @@ plt.show()
 
 #print(df)
 #print(df["Name"])
+
+
+
